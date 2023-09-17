@@ -5,7 +5,11 @@
     top: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(0, #1D267D, #0C134F);
+    /* background-image: linear-gradient(0, #1D267D, #0C134F);
+     */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     align-items: center;
     display: flex;
 }
@@ -14,15 +18,33 @@
     display: flex;
     justify-content: space-between;
     color: var(--color_main);
+    
 }
 .header__navbar-list{
     list-style: none;
     padding-left: 0;
+    display: flex;
+    align-items: center;
 }
+.header__navbar-itemfunc {
+    font-size: 1.5rem;
+    margin: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header__navbar-itemfunc:hover{
+    cursor: pointer;
+}
+.header__navbar-itemfunc i{
+    padding-left: 2px;
+    font-size: 1rem;
+}
+
 .header__navbar-item{
     display: inline-block;
     font-size: 1.5rem;
-    margin: 0 8px;
+    margin: 0 12px;
     position: relative;
 }
 .header__navbar-item--bold{
@@ -39,8 +61,9 @@
     border-radius: 12px;
     width: 100px;
     height: 30px;
-    color: var(--color_main);
-    border-color: var(--color_main) ;
+    color: white;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-image: linear-gradient(0, #1D267D, #0C134F);
 }
 .header__buttonSignUp{
@@ -48,13 +71,63 @@
     width: 100px;
     height: 30px;
     color: #1D267D;
-    border-color: var(--color_main) ;
+    border: none;
     background-image: var(--color_main);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .header__buttonLogIn:hover{
     color: #1D267D;
-    border-color: var(--color_main) ;
     background-image: var(--color_main);
+    cursor: pointer;
+}
+.header__buttonSignUp:hover{
+    background-color: rgb(255,255,255,80%);
+    cursor: pointer;
+}
+.container{
+    height: 2000px;
+}
+.fotter{
+    text-align: center;
+}
+.show__icon{
+    display: none;
+    border: none;
+    color: var(--color_main);
+    background-color: transparent;
+    font-size: 1.5rem;
 }
 
-
+li{
+    list-style: none;
+}
+.text-logo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+.slideshow{
+    width: 100vw;
+    height: 540px;
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    padding: 0 160px;
+}
+@media (max-width: 576px){
+    .disable__menu{
+        display: none;
+    }
+    .show__icon{
+        display: block;
+    }
+    .header__navbar{
+        display: flex;
+        justify-content: space-between;
+        color: var(--color_main);
+        padding: 0 1.5rem;
+    }
+}

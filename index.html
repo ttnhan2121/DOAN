@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area 515</title>
+    <link rel="shortcut icon" href="./assets/css/img/icon515.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main">
@@ -17,30 +20,40 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        logo
+                        <img src="./assets/css/img/icon515.png" alt="logo" width="40">
+                        <ul class="text-logo">
+                            <li style="font-family: 'Poppins', sans-serif; font-weight: 600;"> Area 515 </li>
+                            <li style="font-family: 'Poppins', sans-serif;"> Collection </li>
+                        </ul>
                     </ul>
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">1</li>
-                        <li class="header__navbar-item">2</li>
-                        <li class="header__navbar-item">3</li>
-                        <li class="header__navbar-item">4</li>
-                        <li class="header__navbar-item">5</li>
+                    <ul class="header__navbar-list disable__menu">
+                        <li class="header__navbar-itemfunc">HOME</li>
+                        <li class="header__navbar-itemfunc">SHOP
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="header__navbar-itemfunc">CONTACT</li>
+                        <li class="header__navbar-itemfunc">ABOUT</li>
                     </ul>
-                    <ul class="header__navbar-list">
+                    <ul class="header__navbar-list disable__menu">
                         <button class="header__navbar-item header__navbar-item--bold header__navbar-button--separation header__buttonSignUp "> Đăng ký </button>
                         <button class="header__navbar-item header__navbar-item--bold header__buttonLogIn"> Đăng nhập </button>
                     </ul>
+                    <button class="show__icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </nav>
             </div>
         </header>
-
-        <div class="container">
-    
+        <div class="container" style="padding-top: 60px;">
+            <div class="slideshow">
+            </div>
+            <div class="content">
+            </div>
         </div>
-
         <footer class="footer">
-
+            <h1 style="text-align: center;"> ĐÂY LÀ FOOTER </h1>
         </footer>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

@@ -1,5 +1,5 @@
 :root{
-    --color_main: white;
+    --color_main: #0f5bff;
 }
 *{
     box-sizing: inherit;
@@ -24,4 +24,4 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
-}
+}   
