@@ -78,6 +78,7 @@
 .header__buttonLogIn:hover{
     color: #1D267D;
     background-image: var(--color_main);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
 }
 .header__buttonSignUp:hover{
