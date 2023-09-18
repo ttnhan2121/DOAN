@@ -87,9 +87,7 @@
 .container{
     height: 2000px;
 }
-.fotter{
-    text-align: center;
-}
+
 .show__icon{
     display: none;
     border: none;
@@ -108,7 +106,6 @@ li{
     padding: 15px;
 }
 .slideshow{
-    width: 100vw;
     height: 540px;
     background-image: url(./img/background.png);
     background-repeat: no-repeat;
